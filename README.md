@@ -113,4 +113,4 @@ and the Hard One is `delete(key-word)`
 oy. that's enough. 
 
 #### Nota Bene:
-If you can figure out a way to make your implmentation GENERIC, you get 2.75million extra points. That's enough to get the level 3 prize, or a very old, tattered, online copy of [Think Data Structures in Java](https://open.umn.edu/opentextbooks/textbooks/think-data-structures-algorithms-and-information-retrieval-in-java)
+If you can figure out a way to make your implementation GENERIC, you get 2.75million extra points. That's enough to get the level 3 prize, or a very old, tattered, online copy of [Think Data Structures in Java](https://open.umn.edu/opentextbooks/textbooks/think-data-structures-algorithms-and-information-retrieval-in-java)
