@@ -2,13 +2,18 @@ import java.util.ArrayList;
 
 public class MyCustomHashMap {
 
-    final String[] alphabet = "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z".split(",");
+    final String[] mapKeyArray = "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z".split(",");
+
+    public ArrayList<SinglyLinkedList<String, String>> getHashArray() {
+        return hashArray;
+    }
+
     private ArrayList<SinglyLinkedList<String, String>> hashArray;
 
     public MyCustomHashMap(){
         hashArray = new ArrayList<>(26);
-        for (int i = 0; i < alphabet.length; i++){
-            hashArray.add( new SinglyLinkedList<String, String>(alphabet[i]));
+        for (int i = 0; i < mapKeyArray.length; i++){
+            hashArray.add( new SinglyLinkedList<String, String>(mapKeyArray[i]));
         }
     }
 
@@ -39,4 +44,52 @@ public class MyCustomHashMap {
     public int sizeOfHashArray (){
         return hashArray.size();
     }
+
+//    @Override
+//    // arrayListKey is decided in DashaMapOne, DashaMapTwo, etc
+//    // how do I pass this and still override the set found in the interface?
+//    public void set(String singlyLinkedListKey, String value) {
+//        for(SinglyLinkedList thisList : this.getHashArray()){
+//            if (thisList.getHead().getKey().equals(arrayListKey)){
+//                thisList.set(singlyLinkedListKey, value);
+//            }
+//        }
+//    }
+//
+////    @Override
+////    // how do I pass each hashKey and still override the superclass method for set???
+////    public void set(String listKey, String value) {
+////        hashKey = hashFunctionOne(listKey);
+////        dashaMapOne.put(hashKey, listKey, value);
+////    }
+//
+//    @Override
+//    public String delete(String key) {
+////        hashKey = hashFunctionOne(key);
+////        dashaMapOne.getSinglyLinkedList(hashKey).remove(key);
+//        return null;
+//    }
+//
+//    @Override
+//    public String get(String listKey) {
+////        hashKey = hashFunctionOne(listKey);
+////        this.getSinglyLinkedList(hashKey).find(listKey);
+//        return null;
+//    }
+//
+//    @Override
+//    public boolean isEmpty() {
+//        if (size() > 0) return false;
+//        return true;
+//    }
+//
+//    @Override
+//    public long size() {
+//        long count = 0;
+//        for (int i = 0; i < 26; i++){
+//            this.getSinglyLinkedList(i).size();
+//        }
+//        return count;
+//    }
+
 }

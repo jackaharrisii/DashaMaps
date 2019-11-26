@@ -20,6 +20,10 @@ public class Node<K, V> {
         return this.value;
     }
 
+    public void setValue(V value) {
+        this.value = value;
+    }
+
     public Node<K, V> getNext(){
         return this.next;
     }

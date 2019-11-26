@@ -1,7 +1,11 @@
-public class DashaMapOne implements HashMapX {
+public class DashaMapOne implements HashMapX{
 
     private MyCustomHashMap dashaMapOne;
     String hashKey;
+
+    public MyCustomHashMap getDashaMapOne() {
+        return dashaMapOne;
+    }
 
     public DashaMapOne(){
         dashaMapOne = new MyCustomHashMap();
@@ -15,10 +19,21 @@ public class DashaMapOne implements HashMapX {
         return null;
     }
 
+    public void put(String listKey, String value) {
+        for(SinglyLinkedList thisList : dashaMapOne.getHashArray()){
+            if (thisList.getHead().getKey().equals(hashFunctionOne(listKey))){
+                thisList.add(listKey, value);
+            }
+        }
+    }
+
     @Override
     public void set(String listKey, String value) {
-        hashKey = hashFunctionOne(listKey);
-        dashaMapOne.put(hashKey, listKey, value);
+        for(SinglyLinkedList thisList : dashaMapOne.getHashArray()){
+            if (thisList.getHead().getKey().equals(hashFunctionOne(listKey))){
+                thisList.set(listKey, value);
+            }
+        }
     }
 
     @Override
@@ -54,4 +69,5 @@ public class DashaMapOne implements HashMapX {
 //    protected boolean bucketSize(String key) {
 //        return false;
 //    }
+
 }

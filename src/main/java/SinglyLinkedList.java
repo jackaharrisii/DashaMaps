@@ -43,7 +43,7 @@ public class SinglyLinkedList <K, V>{
         incrementCounter();                            // increment the count of nodes in the list
     }
 
-    // INSERTING A NEW NODE AT A SPECIFIED INDEX
+    // INSERTING A NEW NODE AT A SPECIFIED INDEX (i.e., JAMMING A NEW NODE BETWEEN TWO EXISTING NODES)
     public void add (K key, V value, int index){
         Node<K, V> tempNode = new Node<K, V>(key, value);                // saves the new node to be added later
         Node<K, V> currentNode = head;                       // starts at the beginning
@@ -56,6 +56,20 @@ public class SinglyLinkedList <K, V>{
         tempNode.setNext(currentNode.getNext());      // sets the next node to now be after the node being inserted
         currentNode.setNext(tempNode);                // sets the node being inserted as next after the current node
         incrementCounter();                           // increment the count of nodes in the list
+    }
+
+    // UPDATES AN EXISTING KEY TO REFLECT A NEW VALUE
+    public void set (K key, V value){
+        Node<K, V> tempNode = new Node<K, V>(key, value);
+        Node<K, V> currentNode = head;
+        if (currentNode != null) {                     // in case of null pointer exceptions
+            for (int i = 0; i < listCount && currentNode.getNext() != null; i++){    // find the directed index, or the end if larger than the current size
+                currentNode = currentNode.getNext();
+                if (currentNode.getKey() == tempNode.getKey()){
+                    currentNode.setValue(tempNode.getValue());
+                }
+            }
+        }
     }
 
     // REMOVES A NODE AT A SPECIFIED INDEX

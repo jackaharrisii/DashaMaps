@@ -6,12 +6,12 @@ import org.junit.Test;
 public class myCustomHashMapTest {
 
     MyCustomHashMap testMyCustomHashMap;
-    SinglyLinkedList expectedAList;
+//    SinglyLinkedList expectedAList;
 
     @Before
     public void setUp() throws Exception {
         testMyCustomHashMap = new MyCustomHashMap();
-        expectedAList = new SinglyLinkedList("a");
+//        expectedAList = new SinglyLinkedList("a");
     }
 
     @After

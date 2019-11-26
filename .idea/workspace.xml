@@ -2,22 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16758b06-b4a0-4f1d-844b-c1c64f8682b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DashaMapOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DashaMapServices.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DashaMapThree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DashaMapTwo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HashMapX.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyCustomHashMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SinglyLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/DashaMapOneTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/NodeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SinglyLinkedListTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/myCustomHashMapTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DashaMaps.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DashaMaps.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DashaMaps/DashaMapOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DashaMaps/DashaMapOne.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DashaMaps/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DashaMaps/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DashaMaps/SinglyLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DashaMaps/SinglyLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DashaMaps/myCustomHashMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DashaMaps/myCustomHashMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/DashaMaps/myCustomHashMapTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DashaMaps/myCustomHashMapTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DashaMapOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DashaMapOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyCustomHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyCustomHashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SinglyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SinglyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DashaMapOneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DashaMapOneTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/myCustomHashMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/myCustomHashMapTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +86,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.NodeTest">
+  <component name="RunManager" selected="JUnit.DashaMapOneTest">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -99,6 +95,27 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DashaMapOneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DashaMaps" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DashaMapOneTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DashaMapOneTest.setTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DashaMaps" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DashaMapOneTest" />
+      <option name="METHOD_NAME" value="setTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -160,8 +177,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.NodeTest" />
+        <item itemvalue="JUnit.DashaMapOneTest" />
+        <item itemvalue="JUnit.DashaMapOneTest.setTest" />
         <item itemvalue="JUnit.myCustomHashMapTest" />
+        <item itemvalue="JUnit.NodeTest" />
         <item itemvalue="JUnit.SinglyLinkedListTest" />
       </list>
     </recent_temporary>
@@ -178,7 +197,7 @@
       <updated>1565357944193</updated>
       <workItem from="1565357947238" duration="6000" />
       <workItem from="1565357963802" duration="4390000" />
-      <workItem from="1574360387330" duration="25078000" />
+      <workItem from="1574360387330" duration="34863000" />
     </task>
     <servers />
   </component>
