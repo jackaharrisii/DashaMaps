@@ -74,8 +74,10 @@ public class SinglyLinkedList <K, V>{
 
     // REMOVES A NODE AT A SPECIFIED INDEX
     public boolean remove (int index) {
-        if (index < 0 || index > size()) { return false; }                // ensures the index exists
-        Node currentNode = head;                                          // starts at the head
+        if (index < 0 || index > getListCount()) { return false; }                // ensures the index exists
+        Node currentNode = head;
+        if (head.hasNext()) currentNode = head.getNext();                                          // starts at the head
+        if (head.hasNext() == false) return false;
         if (head != null) {                                               // avoids NPE
             for (int i = 0; i <= index; i++) {                            // iterates through the nodes
                 if (currentNode.getNext() == null) {                      // if it hasn't found it, returns false (i.e., nothing was removed)
@@ -94,9 +96,9 @@ public class SinglyLinkedList <K, V>{
     }
 
     public boolean remove (String key){
-        if (size() == 0) {return false;}
+        if (getListCount() == 0) {return false;}
         Node currentNode = head.getNext();
-        for(int i = 0; i < size(); i++){
+        for(int i = 0; i < getListCount(); i++){
             if (currentNode.getKey() == key){
                 currentNode.getPrev().setNext(currentNode.getNext()).setPrev(currentNode.getPrev());
                 decrementCounter();
@@ -128,7 +130,7 @@ public class SinglyLinkedList <K, V>{
         if (head != null){                                  // prevents null pointer exception
             if (head.getNext() == null) { return -1;}       // returns -1 if the list is empty
             currentNode = head.getNext();                   // starts at index 0 (REMEMBER - HEAD IS NOT PART OF THE LIST, HEAD.GETNEXT IS INDEX 0)
-            for (int i = 0; i < this.size(); i++) {         // iterates through the list if index is greater than 0 (if index = 0, skips the loop)
+            for (int i = 0; i < this.getListCount(); i++) {         // iterates through the list if index is greater than 0 (if index = 0, skips the loop)
                 if (currentNode.getValue().equals(searchData)) {
                     return i;
                 }
@@ -143,7 +145,7 @@ public class SinglyLinkedList <K, V>{
     }
 
     // RETURNS CURRENT SIZE OF THE LIST
-    public int size(){
+    public int getListCount(){
         return listCount;
     }
 

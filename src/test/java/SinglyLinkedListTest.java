@@ -26,14 +26,14 @@ public class SinglyLinkedListTest {
 
     @Test
     public void testNullaryConstructor(){
-        Assert.assertEquals(0, nullList.size());
+        Assert.assertEquals(0, nullList.getListCount());
         Assert.assertNull(nullList.get(0));
     }
 
     @Test
     public void testClear(){
         Assert.assertTrue(testAList.clear());
-        Assert.assertEquals(0, testAList.size());
+        Assert.assertEquals(0, testAList.getListCount());
         Assert.assertNull(testAList.get(0));
         Assert.assertEquals(testAList.getHead().getNext(), testAList.getTail());
     }
@@ -42,7 +42,7 @@ public class SinglyLinkedListTest {
     public void testAdd(){
         testAList.add("a", "6");
         Assert.assertEquals("6", testAList.get(5));
-        Assert.assertEquals(6, testAList.size());
+        Assert.assertEquals(6, testAList.getListCount());
     }
 
     @Test
@@ -50,7 +50,7 @@ public class SinglyLinkedListTest {
         testAList.add("Q", "Q", 2);
         Assert.assertEquals("Q", testAList.get(2));
         Assert.assertEquals("3", testAList.get(3));
-        Assert.assertEquals(6, testAList.size());
+        Assert.assertEquals(6, testAList.getListCount());
     }
 
     @Test
@@ -58,7 +58,7 @@ public class SinglyLinkedListTest {
     public void testRemove(){
         Assert.assertTrue(testAList.remove(2));
         Assert.assertEquals("4", testAList.get(2));
-        Assert.assertEquals(4, testAList.size());
+        Assert.assertEquals(4, testAList.getListCount());
     }
 
     @Test
@@ -66,7 +66,7 @@ public class SinglyLinkedListTest {
     public void testRemove2(){
         Assert.assertTrue(testAList.remove(0));
         Assert.assertEquals("2", testAList.get(0));
-        Assert.assertEquals(4, testAList.size());
+        Assert.assertEquals(4, testAList.getListCount());
     }
 
     @Test
@@ -85,7 +85,7 @@ public class SinglyLinkedListTest {
 
     @Test
     public void testSize(){
-        Assert.assertEquals(5, testAList.size());
+        Assert.assertEquals(5, testAList.getListCount());
     }
 
     @Test

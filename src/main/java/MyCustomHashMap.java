@@ -10,10 +10,19 @@ public class MyCustomHashMap {
 
     private ArrayList<SinglyLinkedList<String, String>> hashArray;
 
-    public MyCustomHashMap(){
-        hashArray = new ArrayList<>(26);
-        for (int i = 0; i < mapKeyArray.length; i++){
-            hashArray.add( new SinglyLinkedList<String, String>(mapKeyArray[i]));
+    public MyCustomHashMap(int depth){
+        if (depth == 1){
+            hashArray = new ArrayList<>(26);    // initial capacity for reference only - doesn't actually change anything
+            for (int i = 0; i < mapKeyArray.length; i++){
+                hashArray.add( new SinglyLinkedList<String, String>(mapKeyArray[i]));
+            }
+        } else if (depth == 2){
+            hashArray = new ArrayList<>(676);   // initial capacity for reference only - doesn't actually change anything
+            for (int i = 0; i < mapKeyArray.length; i++){
+                for (int j = 0; j < mapKeyArray.length; j++){
+                    hashArray.add(new SinglyLinkedList<String, String>(mapKeyArray[i] + mapKeyArray[j]));
+                }
+            }
         }
     }
 

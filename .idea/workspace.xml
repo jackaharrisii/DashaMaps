@@ -2,17 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16758b06-b4a0-4f1d-844b-c1c64f8682b8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/DashaMapThreeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/DashaMapTwoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DashaMaps/DashaMapOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DashaMaps/DashaMapOne.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DashaMaps/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DashaMaps/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DashaMaps/DashaMapThree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DashaMaps/DashaMapThree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DashaMaps/DashaMapTwo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DashaMaps/DashaMapTwo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DashaMaps/SinglyLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DashaMaps/SinglyLinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DashaMaps/myCustomHashMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DashaMaps/myCustomHashMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/DashaMaps/DashaMapOneTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DashaMaps/DashaMapOneTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/DashaMaps/SinglyLinkedListTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DashaMaps/SinglyLinkedListTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/DashaMaps/myCustomHashMapTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/DashaMaps/myCustomHashMapTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DashaMapOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DashaMapOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DashaMapThree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DashaMapThree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DashaMapTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DashaMapTwo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MyCustomHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyCustomHashMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SinglyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SinglyLinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/DashaMapOneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DashaMapOneTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SinglyLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SinglyLinkedListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/myCustomHashMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/myCustomHashMapTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -86,7 +92,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DashaMapOneTest">
+  <component name="RunManager" selected="JUnit.All in DashaMaps">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -99,42 +105,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DashaMapOneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in DashaMaps" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DashaMaps" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DashaMapOneTest" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DashaMapThreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DashaMaps" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DashaMapThreeTest" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DashaMapOneTest.setTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DashaMapThreeTest.putTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DashaMaps" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DashaMapOneTest" />
-      <option name="METHOD_NAME" value="setTest" />
+      <option name="MAIN_CLASS_NAME" value="DashaMapThreeTest" />
+      <option name="METHOD_NAME" value="putTest" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NodeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DashaMaps" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="NodeTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SinglyLinkedListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DashaMaps" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SinglyLinkedListTest" />
-      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -152,6 +147,17 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="myCustomHashMapTest" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="myCustomHashMapTest.deepConstructorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DashaMaps" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="myCustomHashMapTest" />
+      <option name="METHOD_NAME" value="deepConstructorTest" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -177,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DashaMapOneTest" />
-        <item itemvalue="JUnit.DashaMapOneTest.setTest" />
+        <item itemvalue="JUnit.All in DashaMaps" />
+        <item itemvalue="JUnit.DashaMapThreeTest" />
+        <item itemvalue="JUnit.DashaMapThreeTest.putTest" />
         <item itemvalue="JUnit.myCustomHashMapTest" />
-        <item itemvalue="JUnit.NodeTest" />
-        <item itemvalue="JUnit.SinglyLinkedListTest" />
+        <item itemvalue="JUnit.myCustomHashMapTest.deepConstructorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +203,7 @@
       <updated>1565357944193</updated>
       <workItem from="1565357947238" duration="6000" />
       <workItem from="1565357963802" duration="4390000" />
-      <workItem from="1574360387330" duration="34863000" />
+      <workItem from="1574360387330" duration="41403000" />
     </task>
     <servers />
   </component>
@@ -219,9 +225,24 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/MyCustomHashMap.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/src/main/java/DashaMapOne.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/DashaMapThreeTest.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/DashaMapThreeTest.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/DashaMapThree.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

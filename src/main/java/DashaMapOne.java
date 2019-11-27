@@ -8,7 +8,7 @@ public class DashaMapOne implements HashMapX{
     }
 
     public DashaMapOne(){
-        dashaMapOne = new MyCustomHashMap();
+        dashaMapOne = new MyCustomHashMap(1);
     }
 
     private String hashFunctionOne(String input) {
@@ -60,7 +60,7 @@ public class DashaMapOne implements HashMapX{
     public long size() {
         long count = 0;
         for (int i = 0; i < 26; i++){
-            dashaMapOne.getSinglyLinkedList(i).size();
+            count += dashaMapOne.getSinglyLinkedList(i).getListCount();
         }
         return count;
     }
