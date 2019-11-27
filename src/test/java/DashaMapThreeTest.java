@@ -6,11 +6,14 @@ import org.junit.Test;
 public class DashaMapThreeTest {
 
     private DashaMapThree testDashaMapThree;
+    private DashaMapThree testWordListThree;
 
     @Before
     public void setUp() throws Exception {
         testDashaMapThree = new DashaMapThree();
         testDashaMapThree.put("aardvark", "5");
+        testWordListThree = new DashaMapThree();
+        testWordListThree.addAllValuesFromWordList(Reader.readWordList());
     }
 
     @After
@@ -39,7 +42,17 @@ public class DashaMapThreeTest {
 
     @Test
     public void get() {
-        Assert.assertEquals("5", testDashaMapThree.getDashaMapThree().getSinglyLinkedList("aa").get("aardvark"));
+        Assert.assertEquals("5", testDashaMapThree.get("aardvark"));
+    }
+
+    @Test
+    public void getWordList(){
+        Assert.assertEquals("2", testWordListThree.get("me"));
+    }
+
+    @Test
+    public void getWordList2(){
+        Assert.assertEquals("34", testWordListThree.get("both"));
     }
 
     @Test
@@ -55,8 +68,19 @@ public class DashaMapThreeTest {
     }
 
     @Test
+    public void isWordListEmpty(){
+        Assert.assertFalse(testWordListThree.isEmpty());
+    }
+
+    @Test
     public void size() {
         Assert.assertEquals(1, testDashaMapThree.size(), 0.0001);
     }
+
+    @Test
+    public void wordListSize(){
+        Assert.assertEquals(122, testWordListThree.size());
+    }
+    // size is two fewer words than DashaMapOne, because DashaMapTwo omits the two words of only one character each
 
 }

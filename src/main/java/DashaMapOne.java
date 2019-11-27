@@ -1,3 +1,6 @@
+import java.io.IOException;
+import java.util.ArrayList;
+
 public class DashaMapOne implements HashMapX{
 
     private MyCustomHashMap dashaMapOne;
@@ -7,7 +10,7 @@ public class DashaMapOne implements HashMapX{
         return dashaMapOne;
     }
 
-    public DashaMapOne(){
+    public DashaMapOne() {
         dashaMapOne = new MyCustomHashMap(1);
     }
 
@@ -25,6 +28,16 @@ public class DashaMapOne implements HashMapX{
                 thisList.add(listKey, value);
             }
         }
+    }
+
+    public void addAllValuesFromWordList(String wordList){
+        String[] keyValuePairs = wordList.split("\n");
+        for (int i = 0; i < keyValuePairs.length; i++){
+            String[] eachPair = keyValuePairs[i].split(" +");
+            put(eachPair[0], eachPair[1]);
+//            System.out.println(eachPair[0] + " " + eachPair[1]);
+        }
+
     }
 
     @Override
@@ -46,8 +59,8 @@ public class DashaMapOne implements HashMapX{
     @Override
     public String get(String listKey) {
         hashKey = hashFunctionOne(listKey);
-        dashaMapOne.getSinglyLinkedList(hashKey).find(listKey);
-        return null;
+        return String.valueOf(dashaMapOne.getSinglyLinkedList(hashKey).get(listKey));
+//        return null;
     }
 
     @Override

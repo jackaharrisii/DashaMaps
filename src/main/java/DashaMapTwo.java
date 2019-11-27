@@ -12,7 +12,7 @@ public class DashaMapTwo implements HashMapX{
     }
 
     private String hashFunctionTwo(String input) {
-        if (input.length() > 0) {
+        if (input.length() > 1) {
 //            return String.toLowerCase(String.valueOf(input.charAt(1)));       //had to rearrange to get toLowerCase() to work
             return String.valueOf(input.charAt(1)).toLowerCase();
         }
@@ -25,6 +25,16 @@ public class DashaMapTwo implements HashMapX{
                 thisList.add(listKey, value);
             }
         }
+    }
+
+    public void addAllValuesFromWordList(String wordList){
+        String[] keyValuePairs = wordList.split("\n");
+        for (int i = 0; i < keyValuePairs.length; i++){
+            String[] eachPair = keyValuePairs[i].split(" +");
+            put(eachPair[0], eachPair[1]);
+//            System.out.println(eachPair[0] + " " + eachPair[1]);
+        }
+
     }
 
     @Override
@@ -46,8 +56,8 @@ public class DashaMapTwo implements HashMapX{
     @Override
     public String get(String listKey) {
         hashKey = hashFunctionTwo(listKey);
-        dashaMapTwo.getSinglyLinkedList(hashKey).find(listKey);
-        return null;
+        return String.valueOf(dashaMapTwo.getSinglyLinkedList(hashKey).get(listKey));
+//        return null;
     }
 
     @Override

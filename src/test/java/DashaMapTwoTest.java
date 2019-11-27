@@ -6,11 +6,14 @@ import org.junit.Test;
 public class DashaMapTwoTest {
 
     private DashaMapTwo testDashaMapTwo;
+    private DashaMapTwo testWordListTwo;
 
     @Before
     public void setUp() throws Exception {
         testDashaMapTwo = new DashaMapTwo();
         testDashaMapTwo.put("dog", "5");
+        testWordListTwo = new DashaMapTwo();
+        testWordListTwo.addAllValuesFromWordList(Reader.readWordList());
     }
 
     @After
@@ -43,6 +46,16 @@ public class DashaMapTwoTest {
     }
 
     @Test
+    public void getWordList(){
+        Assert.assertEquals("2", testWordListTwo.get("me"));
+    }
+
+    @Test
+    public void getWordList2(){
+        Assert.assertEquals("34", testWordListTwo.get("both"));
+    }
+
+    @Test
     public void isEmpty() {
         Assert.assertFalse(testDashaMapTwo.isEmpty());
     }
@@ -55,8 +68,19 @@ public class DashaMapTwoTest {
     }
 
     @Test
+    public void isWordListEmpty(){
+        Assert.assertFalse(testWordListTwo.isEmpty());
+    }
+
+    @Test
     public void size() {
         Assert.assertEquals(1, testDashaMapTwo.size(), 0.0001);
     }
+
+    @Test
+    public void wordListSize(){
+        Assert.assertEquals(122, testWordListTwo.size());
+    }
+    // size is two fewer words than DashaMapOne, because DashaMapTwo omits the two words of only one character each
 
 }

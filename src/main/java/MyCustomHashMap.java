@@ -33,6 +33,7 @@ public class MyCustomHashMap {
     public SinglyLinkedList<String, String> getSinglyLinkedList(String key){
         for (SinglyLinkedList list : hashArray){
             if (list.getHead().getKey().equals(key)){
+//                System.out.println("[FOUND KEY] " + list.getHead().getKey());
                 return list;
             }
         }

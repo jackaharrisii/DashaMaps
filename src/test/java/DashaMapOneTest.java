@@ -8,12 +8,15 @@ import static org.junit.Assert.*;
 public class DashaMapOneTest {
 
     private DashaMapOne testDashaMapOne;
+    private DashaMapOne testWordListOne;
 
     @Before
     public void setUp() throws Exception {
         testDashaMapOne = new DashaMapOne();
         testDashaMapOne.put("dog", "5");
 //        testDashaMapOne.getDashaMapOne().getSinglyLinkedList("d").add("dog", "5");  // <- long version of the above line
+        testWordListOne = new DashaMapOne();
+        testWordListOne.addAllValuesFromWordList(Reader.readWordList());
     }
 
     @After
@@ -42,7 +45,19 @@ public class DashaMapOneTest {
 
     @Test
     public void get() {
-        Assert.assertEquals("5", testDashaMapOne.getDashaMapOne().getSinglyLinkedList("d").get("dog"));
+//        Assert.assertEquals("5", testDashaMapOne.getDashaMapOne().getSinglyLinkedList("d").get("dog"));
+          Assert.assertEquals("5", testDashaMapOne.get("dog"));
+
+    }
+
+    @Test
+    public void getWordList(){
+        Assert.assertEquals("1", testWordListOne.get("i"));
+    }
+
+    @Test
+    public void getWordList2(){
+        Assert.assertEquals("34", testWordListOne.get("both"));
     }
 
     @Test
@@ -57,7 +72,18 @@ public class DashaMapOneTest {
     }
 
     @Test
+    public void isWordListEmpty(){
+        Assert.assertFalse(testWordListOne.isEmpty());
+    }
+
+    @Test
     public void size() {
         Assert.assertEquals(1, testDashaMapOne.size(), 0.0001);
     }
+
+    @Test
+    public void wordListSize(){
+        Assert.assertEquals(124, testWordListOne.size());
+    }
+
 }

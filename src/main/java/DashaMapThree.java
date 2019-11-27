@@ -29,6 +29,16 @@ public class DashaMapThree implements HashMapX{
         }
     }
 
+    public void addAllValuesFromWordList(String wordList){
+        String[] keyValuePairs = wordList.split("\n");
+        for (int i = 0; i < keyValuePairs.length; i++){
+            String[] eachPair = keyValuePairs[i].split(" +");
+            put(eachPair[0], eachPair[1]);
+//            System.out.println(eachPair[0] + " " + eachPair[1]);
+        }
+
+    }
+
     @Override
     public void set(String listKey, String value) {
         for(SinglyLinkedList thisList : dashaMapThree.getHashArray()){
@@ -48,8 +58,8 @@ public class DashaMapThree implements HashMapX{
     @Override
     public String get(String listKey) {
         hashKey = hashFunctionThree(listKey);
-        dashaMapThree.getSinglyLinkedList(hashKey).find(listKey);
-        return null;
+        return String.valueOf(dashaMapThree.getSinglyLinkedList(hashKey).get(listKey));
+//        return null;
     }
 
     @Override

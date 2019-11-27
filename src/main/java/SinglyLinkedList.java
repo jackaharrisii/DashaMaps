@@ -116,10 +116,14 @@ public class SinglyLinkedList <K, V>{
     }
 
     public V get (K key){
-        Node<K, V> currentNode = head;
-        while (currentNode.hasNext()){
+        Node<K, V> currentNode = head.getNext();
+        while (currentNode != null){
+//            System.out.println("EACH KEY " + currentNode.getKey() + currentNode.getValue());
+            if (currentNode.getKey().equals(key)) {
+//                System.out.println("[FOUND VALUE] " + currentNode.getKey() + currentNode.getValue());
+                return currentNode.getValue();
+            }
             currentNode = currentNode.getNext();
-            if (currentNode.getKey() == key) return currentNode.getValue();
         }
         return null;
     }
